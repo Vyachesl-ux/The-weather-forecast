@@ -1,0 +1,51 @@
+// main: ../style.less
+.nav {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    @media @mobile{
+        display: none;
+    }
+    a {
+        color: @black;
+        //        padding: .78rem 2.07rem;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        position: relative;
+        margin-left: 2rem;
+        @media @tablet{
+            letter-spacing: 0;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: @black;
+            bottom: -5px;
+            left: 0;
+            transition: width .1s linear;
+        }
+    }
+    a:last-child:after {
+        display: none;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+    a:last-child {
+        border: 1px solid @black;
+        border-radius: 20px;
+        padding: .78rem 2.07rem;
+        &:hover{
+            background-color: @black;
+            color: @white;
+            transition: .2s;
+        }
+        &:active{
+            background-color: transparent;
+            color: #000;
+        }
+    }
+}

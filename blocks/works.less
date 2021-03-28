@@ -1,0 +1,18 @@
+// main: ../style.less
+.works__nav {
+    display: flex;
+    justify-content: center;
+    padding: 2.7rem 0;
+    &-link {
+        display: block;
+        text-transform: capitalize;
+        color: fade(@black, 70%);
+        font-size: .86rem;
+        &+& {
+            margin-left: 2rem;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

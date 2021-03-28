@@ -1,0 +1,30 @@
+// main: ../style.less
+.social {
+    display: flex;
+    margin-top: 1.86rem;
+    margin-bottom: 3rem;
+    .social__link+.social__link {
+        margin-left: .71rem;
+    }
+    img:hover {
+    transform: translateY(-5px);
+    transition: transform .2s linear;
+}
+    @media @mobile{
+        margin: .5rem 0 1rem 0;
+        justify-content: center;
+    }
+    .social__link{
+        & img{
+            @media @mobile{
+                width: 31px;
+            }
+        }
+    }
+    @media @mobile-sm {
+        justify-content: left;
+    }
+}
+
+
+

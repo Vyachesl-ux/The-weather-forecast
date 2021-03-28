@@ -1,0 +1,84 @@
+// main: ../style.less
+.footer {
+    padding: 1.43rem 0;
+    background: @black;
+    .footer__items {
+        display: flex;
+        justify-content: space-between;
+        @media @tablet {
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .footer__content {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            @media @tablet {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .footer__link {
+                color: @light-gray;
+                text-transform: capitalize;
+                &:last-child {
+                    border: 1px solid @light-gray;
+                    padding: .5rem 1.43rem;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                    &:active {
+                        background-color: @black;
+                        color: @light-gray;
+                    }
+                    @media @mobile-sm {
+                        margin-top: .5rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+            @media @mobile-sm {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: .86rem;
+            }
+        }
+        .footer__info {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: @light-gray;
+            @media @tablet {
+                justify-content: center;
+                margin-bottom: .5rem;
+            }
+            @media @mobile-sm {
+                flex-direction: column;
+                font-size: .86rem;
+            }
+            .footer__text {
+                color: inherit;
+            }
+            .footer__icons {
+                display: flex;
+                align-items: center;
+                img {
+                    filter: invert(1) brightness(0.5);
+                    margin-left: 1rem;
+                    @media @mobile-sm {
+                        margin-top: .5rem;
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__link+.footer__link {
+    margin-left: 1rem;
+}

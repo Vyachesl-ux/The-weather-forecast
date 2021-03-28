@@ -1,0 +1,79 @@
+// main: ../style.less
+.intro{
+    background: url(../img/intro_bg.png)right no-repeat;
+    background-size: contain;
+    @media @mobile {
+        background-position: bottom;
+        background-size: cover;
+    }
+
+.intro__inner {
+    // background: url(../img/underbg.jpg)center no-repeat;
+    display: flex;
+    margin-top: 1rem;
+    border-bottom: 1px solid fade(@gray, 30%);
+    .intro__content {
+        width: 50%;
+        text-transform: capitalize;
+        @media @mobile{
+            width: 53%;
+        }
+          @media @mobile-sm{
+            width: 100%;
+        }
+        .intro__subtitle {
+            font-size: 2.29rem;
+            font-weight: 200;
+            padding-top: 6.43rem;
+            @media @tablet{
+                font-size: 2rem;
+            }
+            @media @mobile{
+                font-size: 1.5rem;
+            }
+        }
+        .intro__title {
+            font-size: 3.21rem;
+            font-weight: 700;
+            line-height: 3.79rem;
+            @media @tablet{
+                font-size: 2.29rem;
+            }
+            @media @mobile{
+                font-size: 2rem;
+            }
+        }
+        .intro__text {
+            color: fade(@black, 70%);
+            font-size: 1.29rem;
+            @media @mobile{
+                font-size: 1rem;
+            }
+        }
+.text-left{
+    @media @mobile-sm {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+    }
+    .intro__photo {
+        width: 50%;
+        background: url('../img/my_bg.png')right bottom no-repeat;
+        background-size: contain;
+        width: 26.5rem;
+        height: 35.4rem;
+        @media @tablet{
+            width: 300px;
+            height: auto;
+
+        }
+        @media @mobile{
+            width: 47%;
+        }
+          @media @mobile-sm{
+            display: none;
+        }
+    }
+}
+}
