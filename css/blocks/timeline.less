@@ -1,0 +1,166 @@
+// main: ../style.less
+.timeline {
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+    margin: 4.8rem auto;
+        @media @tablet-v {
+            margin:2rem auto;
+                }
+        @media @mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+    .timeline__item {
+        width: 50%;
+        @media @mobile {
+            width: 95%;
+            margin: 10px;
+            border:1px solid @light-gray;
+            border-radius: 5px;
+        }
+    }
+    .timeline__item:first-child {
+        text-align: right;
+        padding-right: 3.1rem;
+        border-right: 1px solid @light-gray;
+        @media @mobile {
+            text-align: center;
+            padding-right:0;
+            padding-left: 0;
+        }
+    }
+    .timeline__item:last-child {
+        text-align: left;
+        padding-left: 3.1rem;
+        @media @mobile {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+    .timeline-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.29rem;
+        margin-bottom: 1.9rem;
+        @media @mobile {
+            color: @white;
+            background: @light-gray;
+        }
+    }
+    .timeline-wrap {
+        .timeline-date {
+            text-transform: capitalize;
+            text-decoration: underline;
+            margin-bottom: 1rem;
+            span {
+                font-weight: 700;
+            }
+        }
+        h3 {
+            text-transform: capitalize;
+            font-weight: 700;
+            .capitalize {
+                text-transform: uppercase;
+            }
+        }
+        h4 {
+            text-transform: capitalize;
+            font-weight: 400;
+            margin-bottom: .5rem;
+            .capitalize {
+                text-transform: uppercase;
+            }
+            abr {
+                text-transform: uppercase;
+            }
+        }
+        p {
+            font-size: .86rem;
+            color: @light-gray;
+            margin-bottom: 2.7rem;
+        }
+        &--education {
+            margin-bottom: 2.6rem;
+            @media @mobile {
+                margin-bottom: 1rem;
+            }
+            .skills,
+            .awards {
+                margin-bottom: 1.86rem;
+                text-transform: uppercase;
+                font-size: 1.29rem;
+            }
+            .skills__items {
+                text-transform: capitalize;
+                @media @mobile {
+                }
+                div+div {
+                    margin-top: .5rem;
+                }
+                div {
+                    position: relative;
+                    max-width: 139px;
+                    &:after,
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        height: .4rem;
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        left: 80%;
+                    }
+                    &:after {
+                        width: 100%;
+                        background-color: #efefef;
+                    }
+                    &:before {
+                        background-color: #6a696b;
+                        z-index: 3;
+                    }
+                    &:first-child:before {
+                        width: 80%;
+                    }
+                    &:nth-child(2):before {
+                        width: 90%;
+                    }
+                    &:nth-child(3):before {
+                        width: 86%;
+                    }
+                    &:last-child:before {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        .awards__wrap {
+            position: relative;
+            left: 3.5rem;
+            padding-right: 4rem;
+            &:before {
+                position: absolute;
+                content: '2016';
+                left: -3.5rem;
+                text-decoration: underline;
+            }
+            .awards__title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+            .awards__source {
+                text-transform: capitalize;
+                margin-bottom: .86rem;
+                .capitalize {
+                    text-transform: uppercase;
+                }
+            }
+            .awards__text {
+                margin-bottom: 2.29rem;
+                font-size: .86rem;
+                color: @light-gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,383 @@
+// main: ../style.less
+.modal-work {
+    display: flex;
+    width: 100%;
+    @media @tablet-v {
+        position: relative;
+    }
+    @media @mobile-sm {
+        flex-direction: column;
+    }
+}
+
+    .modal-work__preview {
+        width: 65%;
+        position: relative;
+        overflow: hidden;
+        @media @mobile {
+            width: 50%;
+        }
+        @media @mobile-sm {
+            width: 100%;
+            height: 45%;
+        }
+        .modal-work__photo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate3d(-50%, -50%, 0);
+            @media @mobile {
+                top: 164%;
+            }
+            @media @mobile-sm {
+                top: 140%;
+                width: 312px;
+                max-height: 500px;
+            }
+            @media @iphone6v {
+                width: 355px;
+            }
+        }
+    }
+    .modal-work__content {
+        width: 35%;
+        padding: 1.87rem;
+        @media @mobile {
+            width: 50%;
+            padding: 1rem;
+            
+        }
+        @media @mobile-sm {
+            position: relative;
+            width: 100%;
+            height: 55%;
+        }
+        .modal-work__header {
+            @media @mobile {
+                position: relative;
+                width: 93%;
+
+            }
+        .modal-work__title{
+            @media @mobile {
+                position: absolute;
+                top: 0;
+                left: -115%;
+                margin-top: 0;
+                font-size: 1.5rem;
+                // padding-right: 10px;
+                border-right: 1px solid @black;
+            }
+            @media @iphone6h {
+                font-size: 1.2rem;
+            }
+            @media @iphone5v {
+                font-size: 1rem;
+            }
+            @media @mobile-sm {
+                position: initial;
+                border:none;
+            }
+            @media @iphone6 {
+                font-size: 1.3rem;
+            }
+            @media @iphone5 {
+                font-size: 1.1rem;
+            }
+
+        }
+    }
+    .modal-work__client{
+        @media @mobile-sm {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            top: 63px;
+            left: 150px;
+            width: 50%;
+            height: 50%;
+        }
+        @media @iphone5 {
+            left: 130px;
+        }
+    }
+            .modal-work__title {
+                font-weight: 700;
+                font-size: 2.29rem;
+                text-transform: uppercase;
+                line-height: 2.8rem;
+                margin-top: 1.87rem;
+                @media @tablet-v {
+                    font-size: 1.7rem;
+                }
+                @media @mobile {
+                    width: 111%;
+                }
+
+
+            }
+            .modal-work__info {
+                text-transform: uppercase;
+                font-size: 1.29rem;
+                line-height: 2.8rem;
+                font-weight: 400;
+                @media @mobile {
+                    // padding-top: 10px;
+                    font-size: 1rem;
+                }
+                @media @iphone5v {
+                    font-size: .9rem;
+                }
+                @media @mobile-sm {
+                    width: 50%;
+                }
+            }
+        }
+        .modal-work__client{
+            @media @mobile {
+                
+            }
+        }
+        .modal-work__client div:first-child {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1.29rem;
+            margin-top: 2.36rem;
+            @media @tablet-v {
+                margin-top: 1rem;
+            }
+            @media @mobile {
+                margin-top: 0;
+                font-size: 1rem;
+            }
+        }
+        .modal-work__client div:last-child {
+            text-transform: capitalize;
+            font-weight: 400;
+            line-height: 1.57rem;
+            color: @light-gray;
+            @media @mobile {
+                font-size: .9rem;
+                margin-bottom: 0.5rem;
+            }
+            @media @iphone5 {
+                font-size: .7rem;
+            }
+        }
+        .modal-work__text {
+            font-weight: 300;
+            font-size: .86rem;
+            color: @light-gray;
+            line-height: 1.7rem;
+            // padding: 2.36rem 7rem 8.3rem 0;
+            padding: 2.36rem 0;
+            @media @tablet-v {
+                padding: 0;
+            }
+            @media @iphone6h {
+                font-size:.8em;
+                line-height: 1.65;
+            }
+            .vip__batut-project{
+                background: @white;
+                border-radius: 3px;
+                text-align: center;
+                color: @black;
+                box-shadow: 0 0 2px rgb(43 42 44);
+
+                h4{
+                    margin-top: 20px;
+                }
+                a{
+                   font-size: 1rem;
+                   text-transform: uppercase;
+                   color:inherit;
+                   font-weight: 500;
+                   width: 100%;
+                   display: block;
+                }
+            }
+            .vip__batut-project:hover{
+                box-shadow: 0 0 4px rgb(43 42 44 /25%);
+            }
+            .vip__batut-project:active{
+                box-shadow: none;
+            }
+
+        }
+        .modal-work__footer {
+            display: flex;
+            justify-content: space-between;
+            @media @tablet-v {
+                display: initial;
+                position: absolute;
+                top: 50%;
+                left: 33%;
+                @media @mobile {
+                    top: 50%;
+                    left: 26%;
+                }
+                @media @mobile-sm {
+                    top: -43%;
+                    left: 50%;
+                }
+
+            }
+            button {
+                position: relative;
+                background-color: @white;
+                border: none;
+                text-transform: uppercase;
+                @media @tablet-v {
+                    font-size:0;
+                }
+                &:first-child:after,
+                &:last-child:after {
+                    position: absolute;
+                    content: '';
+                    border-top: 1px solid @black;
+                    border-right: 1px solid @black;
+                    width: 8px;
+                    height: 8px;
+                    top: 50%;
+                    @media @tablet-v {
+                        border-top:3px solid @white;
+                        border-right: 3px solid @white;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                &:first-child:after {
+                    left: -10px;
+                    transform: translateY(-50%) rotate(250grad);
+                    @media @tablet-v {
+                    left: -215px;
+                        
+                    }
+                    @media @mobile {
+                        left: -150px;
+                    }
+                    @media @iphone6h {
+                        left: -140px;
+                    }
+                    @media @iphone5v {
+                        left: -110px;
+                    }
+                    @media @mobile-sm {
+                        left: -165px;
+                    }
+                    @media @iphone6 {
+                        left: -150px;
+                    }
+                    @media @iphone5h {
+                        left: -125px;
+                    }
+                }
+                &:last-child:after {
+                    right: -10px;
+                    transform: translateY(-50%) rotate(50grad);
+                    @media @tablet-v {
+                    right: -220px;
+                        
+                    }
+                    @media @mobile {
+                        right: -150px;
+                    }
+                    @media @iphone6h {
+                        right: -140px;
+                    }
+                    @media @iphone5v {
+                        right: -110px;
+                    }
+                    @media @mobile-sm {
+                        right: -165px;
+                    }
+                    @media @iphone6 {
+                        right: -150px;
+                    }
+                    @media @iphone5h {
+                        right: -125px;
+                    }
+                }
+            }
+        }
+
+    .modal__content {
+        width: 100%;
+        margin-bottom: 4rem;
+        @media @notebook {
+            margin-bottom: 0;
+        }
+        .modal__title {
+            margin: 5.7rem auto 3.79rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 3.2rem;
+                @media @mobile {
+                    font-size: 2rem;
+                }
+            &--left {
+                text-align: left;
+                margin: 0;
+            }
+            @media @tablet-v {
+                margin:2rem auto 1rem;
+                }
+        }
+        .text-center{
+            @media @mobile {
+                display: flex;
+                justify-content: space-around;
+            }
+
+
+        }
+        .modal__subtitle {
+            text-transform: uppercase;
+            font-size: 1.14rem;
+            line-height: 3rem;
+            color: @black;
+        }
+    }
+
+    .modal__close {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        background-color: @black;
+        border-radius: 50%;
+        right: .8rem;
+        top: .8rem;
+        z-index: 10000;
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 4px;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transition: .2s linear;
+            transform-origin: center;
+        }
+        &:before {
+            transform: translate(-50%, -50%) rotate(45grad);
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(350grad);
+        }
+        &:hover:before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45grad);
+        }
+        &:hover:after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(450grad);
+        }
+    }

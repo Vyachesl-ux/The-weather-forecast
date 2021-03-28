@@ -1,0 +1,50 @@
+// main: ../style.less
+        form {
+            .label {
+                display: block;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: .86rem;
+                margin-bottom: .5rem;
+                &:nth-child(3) {
+                    margin-top: 2rem;
+                    @media @mobile{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            .input,
+            textarea {
+                width: 100%;
+                border: 1px solid fade(@black, 30%);
+                border-radius: 1.9rem;
+                height: 3.86rem;
+                @media @mobile{
+                    height: 2.5rem;
+                }
+
+                &[placeholder] {
+                    padding-left: 1.9rem;
+                    font-size: .86rem;
+                    @media @mobile{
+                        padding-left: 1rem;
+                    }
+                }
+                &:focus {
+                    border-color: green;
+                }
+            }
+            textarea {
+                height: 14.3rem;
+                resize: none;
+                margin-bottom: 2rem;
+                @media @mobile{
+                    height: 7.3rem;
+                    margin-bottom: 1rem;
+                }
+                &[placeholder] {
+                    padding-top: 1.5rem;
+                }
+            }
+
+        }
