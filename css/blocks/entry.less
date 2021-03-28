@@ -1,0 +1,54 @@
+// main: ../style.css
+.weather-forecast{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.forecast-wrap{
+	width: 100%;
+	max-width: 950px;
+	margin: auto;
+
+
+}
+.entry {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	// padding-top: 100px;
+	.city-list{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.city-title{
+		width: 100%;
+	}
+}
+.city-list__title{
+	background: @white;
+	width: 50%;
+	padding: 10px;
+	border-radius: 30px;
+ 		color: #000;
+ 		position: relative;
+ 		&:after{
+ 			position: absolute;
+ 			content: '';
+ 			display: block;
+ 			top: 50%;
+ 			right: 15px;
+ 			width: 10px;
+ 			height: 10px;
+ 			border-right: solid 2px @black;
+ 			border-bottom: solid 2px @black;
+ 			transform: translateY(-50%) rotate(45grad);
+
+ 		}
+}
+
+.city-list__subtitle{
+	text-transform: capitalize;
+	color: @white;
+
+}

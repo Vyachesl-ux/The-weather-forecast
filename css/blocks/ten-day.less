@@ -1,0 +1,114 @@
+
+.ten-day{
+	position: relative;
+	width: 100%;
+	max-width: 950px;
+	margin: 15px 0;
+	overflow: hidden;
+	.ten-day__title{
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+}
+
+.ten-day__content{
+	position: relative;
+	width: 1235px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	transition: all ease 1s;
+	left: 0;
+	@media @tablet-v {
+		width: 1480px;
+	}
+	@media @mobile {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	@media @mobile-h {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.day{
+		width: 150px;
+		background-color: #FFFFFF1c;
+		border-radius: 5px;
+		font-weight: 300;
+		font-size: 13px;
+		padding: 10px;
+		cursor: grab;
+		user-select: none;
+		@media @tablet-v {
+			width: 160px;
+		}
+		@media @mobile {
+			width: 100%;
+			margin-bottom: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		@media @mobile-h {
+						width: 100%;
+			margin-bottom: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.day__title{
+			text-align: center;
+			margin-bottom: 5px;
+			font-size: 16px;
+			font-weight: 700;
+			@media @mobile {
+				text-align: left;
+				width: 15%;
+			}
+			@media @mobile-h {
+				text-align: left;
+				width: 15%;
+			}
+		}
+		.day__weather-prediction{
+			font-size: 13px;
+			margin-bottom: 5px;
+			text-align: center;
+			@media @mobile {
+				font-size: 14px;
+			}
+			@media @mobile-h {
+				font-size: 14px;
+			}
+		}
+		.day__data{
+			display: flex;
+			justify-content: space-around;
+		}
+		.day__icon>img{
+			pointer-events: none;
+		}
+		.temperature{
+
+				.temperature__day, .temperature__night{
+					font-weight: 700;
+					font-size: 18px;
+					@media @mobile {
+						margin-left: 10px;
+					}
+				}
+			
+		}
+	}
+}
+			.temperature__content{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				&+&{
+				margin-top: 5px;
+
+				}
+				}

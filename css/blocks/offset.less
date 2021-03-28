@@ -1,0 +1,53 @@
+.offset__bgl, .offset__bgr{
+	background-color: @1c;
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	border-radius: 3px;
+}
+.offset__bgl{
+	top: 50%;
+	right: 10px;
+	@media @mobile {
+		visibility: hidden;
+	}
+	@media @mobile-h {
+		visibility: hidden;
+	}
+}
+.offset__bgr{
+	display: none;
+	top: 50%;
+	left: 10px;
+	@media @mobile {
+		visibility: hidden;
+	}
+	@media @mobile-h {
+		visibility: hidden;
+	}
+
+}
+
+.offset-left, .offset-right{
+	position: absolute;
+	content: '';
+	width: 12px;
+	height: 12px;
+	background-color: none;
+	border-right: 2px solid @white;
+	border-bottom: 2px solid @white;
+	top: 24%;
+	cursor: pointer;
+}
+.offset-left{
+	transform: rotate(-50grad);
+	right: 25%;
+
+}
+.offset-right{
+	display: none;
+	transform: rotate(150grad);
+	left: 25%;
+
+}
+

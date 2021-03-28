@@ -1,0 +1,28 @@
+.second-line{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	.second-line__content{
+		position: relative;
+		.second-line__icon{
+			position: absolute;
+			top: 0;left: 0;
+			&>img{
+				filter: invert(1);
+			}
+		}
+		.second-line__title{
+			margin-left: 30px;
+			text-transform: uppercase;
+			@media @mobile {
+				display: none;
+			}
+		}
+		.second-line__meaning{
+			margin-left: 30px;
+		}
+	}
+	@media @mobile {
+		margin-top: 70px;
+	}
+}
