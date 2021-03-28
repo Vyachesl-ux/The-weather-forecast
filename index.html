@@ -1,0 +1,268 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather forecast</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main class="weather-forecast">
+			<div class="forecast-wrap">
+				<div class="container">
+					<div class="entry">
+						<div class="city-list">
+							<h3 class="list__title">Select a city from the list below</h3>
+							<form>
+								<div class="select" data-state="">
+									<div class="select__title" data-default="Option 0">Cities</div>
+									<div class="select__content-wrap">
+										<div class="select__content">
+											<input id="singleSelect1" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect1" class="select__label">Bergen</label>
+											<input id="singleSelect2" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect2" class="select__label">Ålesund</label>
+											<input id="singleSelect3" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect3" class="select__label">Oslo</label>
+											<input id="singleSelect4" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect4" class="select__label">Trondheim</label><input id="singleSelect5" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect5" class="select__label">Stavanger</label><input id="singleSelect6" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect6" class="select__label">Narvik</label><input id="singleSelect7" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect7" class="select__label">Bodø</label>
+											<input id="singleSelect8" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect8" class="select__label">Kristiansund</label>
+											<input id="singleSelect9" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect9" class="select__label">Kristiansand</label>
+											<input id="singleSelect10" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect10" class="select__label">Tromsø</label>
+											<input id="singleSelect11" class="select__input" type="radio" name="singleSelect" >
+											<label for="singleSelect11" class="select__label">Alta</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="city-title">City</div>
+					</div>
+					<div class="first-line">
+						<div class="first-line__icon"></div>
+						<h1 class="first-line__temp">t</h1>
+						<div class="degrees">
+							<button class="celsius active">c</button>
+							<button class="fahrenheit ">f</button>
+						</div>
+						<div class="summary">
+							<h3 class="summary__title">Weather prediction</h3>
+							<p class="summary__subtitle">Weather summary. What the weather is possible today, min and max temperature</p>
+							<p class="summary__alert">Weather alert</p>
+						</div>
+					</div>
+					<div class="second-line">
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/heat.svg" width="24px" alt=""></div>
+							<div class="second-line__title">feels like</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/wind.svg" width="24px" alt=""></div>
+							<div class="second-line__title">wind</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/visible.svg" width="24px" alt=""></div>
+							<div class="second-line__title">visibility</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/humidity (1).svg" width="24px" alt=""></div>
+							<div class="second-line__title">humidity</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/barometer.svg" width="24px" alt=""></div>
+							<div class="second-line__title">pressure</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+						<div class="second-line__content">
+							<div class="second-line__icon"><img src="images/icons/dew-point.svg" width="24px" alt=""></div>
+							<div class="second-line__title">dew point</div>
+							<div class="second-line__meaning">meaning</div>
+						</div>
+
+					</div>
+					<div class="ten-day">
+						<h4 class="ten-day__title">7 day forecast</h4>
+						<div class="ten-day__content" style="left: 0px">
+							<div class="day">
+								<div class="day__title">Today</div>
+								<div class="day__weather-prediction"></div>
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 1</div>
+								<div class="day__weather-prediction"></div>
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 2</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 3</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 4</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 5</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 6</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							<div class="day">
+								<div class="day__title">Day 7</div>
+								<div class="day__weather-prediction"></div>
+
+								<div class="day__data">
+									<div class="day__icon"><img src="https://www.placehold.it/40" class="daily__icon" alt=""></div>
+									<div class="day__icon__drop"><img src="images/icons/drop.svg" alt="drop" width="6px"></div>
+									<div class="day__pop">92%</div>
+								</div>
+								<div class="temperature">
+									<div class="temperature__content">
+										<div class="temperature__title">Day</div>
+										<div class="temperature__day">1</div>
+									</div>
+									<div class="temperature__content">
+										<div class="temperature__title">Night</div>
+										<div class="temperature__night">1</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div> <!-- ten -day__content -->
+						<div class="offset__bgl"><span class="offset-left"></span></div>
+						<div class="offset__bgr"><span class="offset-right"></span></div>
+					</div><!-- ten-day -->
+					
+					
+				</div>
+			</main>
+			<script src="js/app.js"></script>
+		</body>
+	</html>
