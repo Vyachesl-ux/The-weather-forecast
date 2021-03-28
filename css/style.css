@@ -568,33 +568,33 @@ ul {
   left: 25%;
 }
 .Rain {
-  background: url(../../images/Rain1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
+  background: url(../images/Rain1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
 }
 .Rain-icon {
-  background: url(../../images/icons/LightRainV2.svg) center no-repeat;
+  background: url(../images/icons/LightRainV2.svg) center no-repeat;
 }
 .Drizzle {
-  background: url(../../images/Rain1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
+  background: url(../images/Rain1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
 }
 .Snow {
-  background: url(../../images/Snow2.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
+  background: url(../images/Snow2.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
 }
 .Snow-icon {
-  background: url(../../images/icons/LightSnowV2.svg) center no-repeat;
+  background: url(../images/icons/LightSnowV2.svg) center no-repeat;
 }
 .Clouds {
-  background: url(../../images/Cloudy1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
+  background: url(../images/Cloudy1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
 }
 .Clouds-icon {
-  background: url(../../images/icons/CloudyV2.svg) center no-repeat;
+  background: url(../images/icons/CloudyV2.svg) center no-repeat;
 }
 .Mist {
-  background: url(../../images/Cloudy1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
+  background: url(../images/Cloudy1.png) center top repeat-x, linear-gradient(#2a5194 20.83%, #5173af 78.65%);
 }
 .Clear {
-  background: url(../../images/Day.png) top center / cover no-repeat, linear-gradient(#1360a7 20.83%, #1b7bc1 78.65%, rgba(27, 123, 193, 0) 200%);
+  background: url(../images/Day.png) top center / cover no-repeat, linear-gradient(#1360a7 20.83%, #1b7bc1 78.65%, rgba(27, 123, 193, 0) 200%);
 }
 .Clear-icon {
-  background: url(../../images/icons/SunnyDayV2.svg) center no-repeat;
+  background: url(../images/icons/SunnyDayV2.svg) center no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
