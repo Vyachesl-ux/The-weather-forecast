@@ -29,7 +29,7 @@ body {
 }
 @media (max-width: 375px) {
   body {
-    height: 173vh;
+    height: 175vh;
   }
 }
 @media (max-width: 360px) {
